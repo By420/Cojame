@@ -1,0 +1,189 @@
+body{
+    background-image: url(../images/fondoCoja.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; /* Esto asegura que la imagen de fondo no se desborde */
+    background-attachment: fixed; /* Esto fija la imagen de fondo */
+    background-repeat: no-repeat; /* Esto evita que la imagen de fondo se repita */
+    width: 100%;
+}
+.arepas-icon {
+    width: 40px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 40px; /* Ajusta el tamaño del ícono según sea necesario */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    margin-top: -10px;
+}
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* Estilo para la sección de menú */
+.menu {
+    display: flex;
+    flex-direction: column; /* Mostrar los botones verticalmente */
+    align-items: center; /* Centrar horizontalmente los botones */
+    gap: 20px; /* Espacio entre los botones */
+    padding: 20px;
+    overflow-x: hidden;
+    max-height: calc(100vh - 150px); /* Ajustar la altura según sea necesario */
+   
+}
+
+/* Estilo para los elementos del menú */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave */
+    color: black;
+    font-size: 20px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+    width: 100%; /* Ancho completo */
+    background: linear-gradient(to bottom, #ffcc00, #ff9900); /* Degradado de colores amarillo a naranja */
+    font-family: "Poetsen One", sans-serif;
+
+}
+
+.product:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón de regreso */
+#backButton {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 27px;
+    position: fixed; /* Posicionamiento fijo para que se mantenga en la ventana */
+    top: 20px; /* Distancia desde arriba */
+    left: 20px; /* Distancia desde la izquierda */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    font-family: "Poetsen One", sans-serif;
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    #backButton {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 16px; /* Ajustar el padding */
+        top: 10px; /* Distancia desde arriba más pequeña */
+        left: 10px; /* Distancia desde la izquierda más pequeña */
+    }
+}
+
+
+#backButton:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para los botones del menú */
+#menu button {
+    padding: 30px 65px;
+    background: linear-gradient(to bottom, #ffcc00, #ff9900); 
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 27px;
+    margin-bottom: 10px;
+    text-decoration: none; /* Quitar subrayado */
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    font-family: "Poetsen One", sans-serif;
+}
+
+#menu button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+#menu button p{
+    font-size: 100px;
+}
+
+/* Estilo para el botón de bebidas */
+#menu button:nth-child(9) {
+    padding: 30px 65px; /* Ajustar el padding si es necesario */
+    background: linear-gradient(to bottom, #ffcc00, #ff9900); 
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 27px;
+    margin-bottom: 10px;
+    text-decoration: none; /* Quitar subrayado */
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    font-family: "Poetsen One", sans-serif;
+}
+
+#menu button:nth-child(9):hover{
+    background-color: #0056b3;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Asegura que esté por encima de todos los demás elementos */
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.whatsapp-button img {
+    width: 70px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantén la relación de aspecto */
+}
+
+.cloud {
+    position: fixed;
+    bottom: 32px; /* Ajusta la posición vertical */
+    right: 95px; /* Ajusta la posición horizontal */
+    background-color: #fff; /* Color de fondo de la nube */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 9998; /* Asegura que esté debajo del botón de WhatsApp */
+    animation: shake 0.5s infinite alternate; /* Aplica la animación */
+
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+.cloud p {
+    margin: 0; /* Elimina el margen interior */
+    font-size: 19px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-family: "Poetsen One", sans-serif;
+    
+}
